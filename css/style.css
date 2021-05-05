@@ -1,0 +1,288 @@
+body{
+  font-family: 'Sansita', sans-serif; /* diamo un particolare font al corpo del sito */
+}
+
+/* grafica barra di navigazione */
+.navbar-nav {
+  margin-left: auto !important; /* la spostiamo tutta a destra */
+  margin-right: 2% !important;
+}
+
+.navbar-toggler {
+  margin-left: auto !important; /* spostiamo l'hamburger a destra */
+}
+
+nav ul li {
+  padding: 0px 10px;
+}
+
+a {
+  font-size: 18px;
+  color: white !important;
+}
+
+nav ul li.active {
+  font-weight: 700;
+  border-bottom: solid white !important; /* nella barra di navigazione tracciamo il bordo in basso per identificare la pagina corrente */
+
+}
+
+nav ul li:hover {
+  font-weight: 700; /* ingrandiamo il carattere al passare del mouse */
+}
+
+.bg-light {
+  background-color: #00b850 !important; /* colore della barra di navigazione */
+}
+
+.border {
+  border-radius: 5px; /* bordi arrotondati del logo */
+}
+
+/* modifica del carosello e del titolo all'interno */
+h1 {
+  font-family: 'Satisfy', cursive !important;
+  font-size: 6.0rem;
+}
+
+.carousel-caption { /* colore scritte all'interno del carousel */
+  color: yellow;
+}
+
+h3 {
+  font-family: 'Satisfy', cursive !important;
+  font-size: 2.5rem;
+}
+
+/* sezione chi siamo */
+#chisiamo {
+  padding-top: 45px;
+}
+p {
+  font-size: 1.2rem;
+}
+
+.dimension { /* dimensione dell'immagine all'interno della colonna */
+  width: 100%;
+}
+
+#chisiamo .container-fluid {
+  padding: 40px;
+  width: 70%;
+  text-align: center;
+}
+
+.btn-outline-success {
+    color: #00b850;
+    border-color: #00b850; /* colore del bottone */
+}
+
+/* sezione menu */
+h2{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 45px;
+  color: black;
+}
+
+#menu {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#menu .container-fluid{
+  width: 100%;
+}
+
+#menu .mix {
+  padding: 0px;
+}
+
+#menu .portfolio-item {
+  padding: 10px;
+}
+
+/* grafica 4 foto del menu */
+.shot-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.shot-item img {
+  width:100%;
+  height: 100%;
+  transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -webkit-transition: all .6s ease; 
+}
+
+.shot-item .single-content {
+  background-color: rgba(22, 26, 39, 0.7);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+  width: 100%;
+}
+
+.shot-item .single-content .fancy-table {
+  display: table;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.shot-item .single-content .fancy-table .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.shot-item .single-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: 'Sansita', sans-serif !important;
+}
+
+.shot-item:hover img { /* zoom dell'immagine al passare del cursore */
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.shot-item:hover .single-content {
+  opacity: 1;
+}
+
+.shot-item:hover .single-content a {
+  margin-bottom: 0;
+}
+
+/*info*/
+#info h3 {
+  font-size: 34px;
+  padding-top: 25px;
+  text-align: center;
+  color: black;
+  border-bottom: solid black;
+  font-family: 'Sansita', sans-serif !important;
+}
+
+#info {
+  background-image: url(../img/mare.jpg); /* immagine di sfondo della sezione */
+  background-size: cover;
+  background-position: top;
+  color: black !important;
+  background-attachment: fixed;
+  padding-top: 80px;
+  padding-bottom: 80px; 
+}
+
+#info .container-fluid {
+  width: 80%;
+}
+
+.text-block {
+  width: 100%;
+  background-color: white;
+  color: black;
+  opacity: 0.7;
+  border-radius: 7px;
+  margin: 20px;
+}
+
+.text-block .fab { /* grafica icona di tripadvisor */
+  font-size: 30px;
+  background-color: #00b850;
+  border-radius: 5px; 
+  color:black !important;
+  margin-bottom: 10px;
+}
+
+.icon { /* grafica icone */
+        font-size: 40px;
+        margin: 20px auto;
+        padding: 4px; /* centramento contorno icone */
+        height: 75px; 
+        width: 75px;
+        border: 3px solid black; /* contorno icone */
+        border-radius: 50%; /* forma circolare contorno icone */
+      }
+
+.bold {
+  font-weight: bold;
+}
+
+/*contatti*/
+#contact{
+  background-image: url(../img/cell.jpg); /* immagine di sfondo */
+  background-size: cover;
+  background-position: top;
+  padding-top: 80px;
+  padding-bottom: 80px; 
+}
+
+#contact .container-fluid {
+  width: 90%;
+}
+#contact h2 {
+  text-align: left;
+  color: white;
+}
+
+#contact .text-block{
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  border-radius: 7px;
+  margin: 0px;
+}
+
+#contact p {
+  margin-bottom: 2rem;
+}
+
+p.time {
+  margin: 0px !important; 
+  padding-left: 25px;
+}
+p.time-1 {
+  margin: 0px !important; 
+}
+
+img.map {
+  width: 100%;
+  border-radius: 7px;
+}
+
+#contact .text-block p i{
+  padding-right: 5px
+}
+
+/*footer*/
+#footer {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  background-color: #00b850 !important;
+  color: white;
+}
+
+#footer p {
+  margin-bottom: 5px;
+}
+
+#footer a i {
+  font-size: 30px;
+  margin: 5px;
+}
