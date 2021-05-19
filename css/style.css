@@ -927,6 +927,10 @@ p.time-1 {
   #list .container-fluid {
     width: 80%;
   }
+  
+  #list .attenzione {
+    font-size: 14px;
+  }
 
   #menu-pcrd .container-fluid{
     width: 95%;
