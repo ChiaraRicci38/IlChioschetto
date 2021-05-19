@@ -649,6 +649,10 @@ p.time-1 {
   .shot-item .single-content a {
     font-size: 40px;
   }
+  
+  #menu .portfolio-item {
+    padding: 0px;
+  }
 
   #info{
     padding-top: 65px;
