@@ -644,7 +644,7 @@ p.time-1 {
 
   #menu img {
     width: 364px;
-    padding: 10px;
+    padding: 5px 0px;
   }
   .shot-item .single-content a {
     font-size: 40px;
@@ -735,10 +735,6 @@ p.time-1 {
   .shot-item .single-content a {
     font-size: 40px;
     padding: 40px;
-  }
-  
-  #menu img {
-    padding: 10px 0px !important;
   }
   
   #menu .portfolio-item {
