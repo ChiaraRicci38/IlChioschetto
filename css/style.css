@@ -1,0 +1,908 @@
+body{
+  font-family: 'Sansita', sans-serif; /* diamo un particolare font al corpo del sito */
+  color: black;
+}
+
+/* grafica barra di navigazione */
+.navbar-brand img {/*dimensione logo*/
+  height: 45px;
+  width: 53px;
+}
+
+.navbar-nav {
+  margin-left: auto !important; /* la spostiamo tutta a destra */
+  margin-right: 1% !important;
+}
+
+.navbar-toggler {
+  margin-left: auto !important; /* spostiamo l'hamburger a destra */
+  border: none !important;
+}
+
+.navbar-toggler i { /*icona dell'hamburger*/
+  color:#fff; 
+  font-size:28px;
+}
+
+nav {
+  padding: 3px 3px 3px 15px !important;
+}
+
+nav ul li {
+  padding: 0px 10px;
+}
+
+a {
+  font-size: 18px;
+  color: white !important;
+}
+
+nav ul li.active {
+  font-weight: 700;
+  border-bottom: solid white !important; /* nella barra di navigazione tracciamo il bordo in basso per identificare la pagina corrente */
+
+}
+
+nav ul li:hover {
+  font-weight: 700; /* ingrandiamo il carattere al passare del mouse */
+}
+
+.bg-light {
+  background-color: #00b850 !important; /* colore della barra di navigazione */
+}
+
+.border {
+  border-radius: 5px; /* bordi arrotondati del logo */
+}
+
+/* modifica del carosello e del titolo all'interno */
+.inizio .carousel {
+  padding-top: 50px;
+}
+
+.inizio .carousel img {/* dimensione delle immagini del carosello */
+    height: 600px;
+  }
+
+h1 {
+  font-family: 'Satisfy', cursive !important;
+  font-size: 96px;
+}
+
+.inizio .carousel-caption { /* colore scritte all'interno del carousel */
+  color: yellow;
+}
+
+h3 {
+  font-family: 'Satisfy', cursive !important;
+  font-size: 40px;
+}
+
+/* sezione chi siamo */
+#chisiamo {
+  padding-top: 45px;
+}
+
+p {
+  font-size: 19px;
+}
+
+#chisiamo img { /* dimensione dell'immagine all'interno della colonna */
+  width: 100%;
+  height: 100%;
+}
+
+#chisiamo .container-fluid {
+  padding: 40px;
+  width: 70%;
+  text-align: center;
+}
+
+#chisiamo .btn-outline-success { /* grafica bottone "scopri di più" */
+    color: #00b850;
+    font-size: 20px;
+    border-color: #00b850;
+    margin-bottom: 16px; 
+}
+
+#chisiamo .btn-outline-success:hover {
+  color: white;
+  background-color: #00b850;
+  border-color: #00b850;
+  text-decoration: none;
+}
+
+/* sezione menu */
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 45px;
+  color: black;
+}
+
+#menu {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#menu .container-fluid {
+  width: 100%;
+}
+
+#menu .mix {
+  padding: 0px;
+}
+
+#menu .portfolio-item {
+  padding: 10px;
+}
+
+/* grafica 4 foto del menu */
+.shot-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.shot-item img {
+  width:100%;
+  height: 100%;
+  transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -webkit-transition: all .6s ease; 
+}
+
+.shot-item .single-content {
+  background-color: rgba(22, 26, 39, 0.7);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+  width: 100%;
+}
+
+.shot-item .single-content .fancy-table {
+  display: table;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.shot-item .single-content .fancy-table .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.shot-item .single-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: 'Sansita', sans-serif !important;
+  padding: 35px;
+}
+
+.shot-item:hover img { /* zoom dell'immagine al passare del cursore */
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.shot-item:hover .single-content {
+  opacity: 1;
+}
+
+.shot-item:hover .single-content a {
+  margin-bottom: 0;
+}
+
+/*info*/
+#info h3 {
+  font-size: 34px;
+  padding-top: 25px;
+  text-align: center;
+  color: black;
+  border-bottom: solid black;
+  font-family: 'Sansita', sans-serif !important;
+}
+
+#info {
+  background-image: url(../img/mare.jpg); /* immagine di sfondo della sezione */
+  background-size: cover;
+  background-position: top;
+  color: black !important;
+  background-attachment: fixed;
+  padding-top: 80px;
+  padding-bottom: 80px; 
+}
+
+#info .container-fluid {
+  width: 80%;
+}
+
+.text-block {
+  background-color: white;
+  color: black;
+  opacity: 0.7;
+  border-radius: 7px;
+  margin: 20px;
+}
+
+.final {
+  margin: 20px 5px !important;
+}
+
+.text-block .fab { /* grafica icona di tripadvisor */
+  font-size: 30px;
+  background-color: #00b850;
+  border-radius: 5px; 
+  color:black !important;
+  margin-bottom: 10px;
+}
+
+.icon { /* grafica icone */
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 4px; /* centramento contorno icone */
+  height: 75px; 
+  width: 75px;
+  border: 3px solid black; /* contorno icone */
+  border-radius: 50%; /* forma circolare contorno icone */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*bottone del modale*/
+.btn-outline-success{
+  background-color: rgba(255,255,255,0.7);
+  color: #00b850;
+  border-color: #00b850;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid #00b850;
+}
+
+.btn-outline-success:hover {
+  color: black;
+  background-color: #00b850;
+  border-color: black;
+} 
+
+.final-2 {
+  padding: 30px;
+  margin: 20px 5px 5px 5px !important;
+}
+
+.final-2 p {
+  margin: 0px;
+}
+
+/*fraccette del modale per cambiare pagina*/
+.modal-body .carousel-control-prev-icon {
+  height: 30px;
+  width: 30px;
+  background-size: 23px;
+  border-radius: 50%;
+  background-color: #0073ae !important;
+}
+
+.modal-body .carousel-control-next-icon {
+  height: 30px;
+  width: 30px;
+  background-size: 23px;
+  background-color: #0073ae !important;
+  border-radius: 50%;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+/*contatti*/
+#contact{
+  background-image: url(../img/cell.jpg); /* immagine di sfondo dei contatti*/
+  background-size: cover;
+  background-position: top;
+  padding-top: 80px;
+  padding-bottom: 80px; 
+}
+
+#contact .container-fluid {
+  width: 90%;
+}
+
+#contact h2 {
+  text-align: left;
+  color: white;
+}
+
+#contact .text-block{
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  border-radius: 7px;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 2rem;
+}
+
+p.time {
+  margin: 0px !important; 
+  padding-left: 25px;
+}
+p.time-1 {
+  margin: 0px !important; 
+}
+
+#contact .text-block p i{
+  padding-right: 5px
+}
+
+#contact iframe { /* dimensione della cartina */
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+/*footer*/
+#footer {
+  margin: 0px;
+  padding: 8px;
+  text-align: center;
+  background-color: #00b850 !important;
+  color: white;
+}
+
+#footer p {
+  margin-bottom: 5px;
+}
+
+#footer a i {
+  font-size: 27px;
+  margin: 0px 5px 5px 5px;
+
+}
+
+/*pagina menu piadina*/
+#piadina {
+  background-image: url(../img/piadina2.jpg);
+  background-size: cover;
+  background-position: top;
+  padding-top: 350px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#piadina h1 {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+#piadina .text-block {
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  margin:0px;
+  border-radius: 0px;
+}
+
+/* grafica della tabella del menu */
+#list .container-fluid { 
+  width: 50%;
+}
+
+#list h3 {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 0px;
+  font-family: 'Sansita', sans-serif !important;
+}
+
+#list h4 {
+  text-align: center;
+  margin: 10px;
+}
+
+#list h5 {
+  text-align: center;
+}
+
+#list ul li {
+  padding: 7px;
+}
+
+.badge {
+  background-color: #00b850;
+}
+
+#list .text-block {
+  background-color: #00b850 !important;
+  border-radius: 7px;
+  margin: 5px;
+  padding: 10px;
+  opacity: 1;
+}
+
+/* grafico dei tre riquadri delle alternative */
+#menu-pcrd {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+#menu-pcrd .container-fluid{
+  width: 80%;
+}
+
+#menu-pcrd .mix {
+  padding: 0px;
+}
+
+#menu-pcrd .portfolio-item {
+  padding: 10px;
+}
+
+/* grafica file pdf */
+#pdf {
+  margin-bottom: 50px;
+  text-align: center;
+  color: black;
+}
+
+#pdf i {
+  text-align: center;
+  margin: 15px;
+  color: black;
+  font-size: 30px;
+  padding: 7px; /* centramento contorno icone */
+  height: 50px; 
+  width: 50px;
+  border: 3px solid black; /* contorno icone */
+  border-radius: 50%; /* forma circolare contorno icone */
+}
+
+#pdf i:hover {
+  font-weight: bold;
+}
+
+#pdf h4 {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Sansita', sans-serif !important;
+}
+
+/*pagina menu crescioni */
+#crescione {
+  background-image: url(../img/crescione2.jpg);
+  background-size: cover;
+  background-position: top;
+  padding-top: 350px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#crescione h1 {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+#crescione .text-block {
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  margin:0px;
+  border-radius: 0px;
+}
+
+/*pagina menu rotolini */
+#rotolino {
+  background-image: url(../img/rotolino2.jpg);
+  background-size: cover;
+  background-position: top;
+  padding-top: 350px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#rotolino h1 {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+#rotolino .text-block {
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  margin:0px;
+  border-radius: 0px;
+}
+
+/*pagina menu dolci */
+#dolce {
+  background-image: url(../img/dolce2.jpg);
+  background-size: cover;
+  background-position: top;
+  padding-top: 350px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#dolce h1 {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+#dolce .text-block {
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  margin:0px;
+  border-radius: 0px;
+}
+
+.titolo h3{
+  overflow: hidden;
+  text-align: center;
+} 
+
+.titolo h3:before, .titolo h3:after {
+  background-color: #00b850;
+  content: "";
+  display: inline-block;
+  height: 3.0px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.titolo h3:before {
+  right: 2.5em;
+  margin-left: -50%;
+}
+
+.titolo h3:after {
+  left: 2.5em;
+  margin-right: -50%;
+}
+
+/* pagina del chi siamo */
+#about {
+  background-image: url(../img/storia.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 80px 0px;
+}
+
+#about h1 {
+  color: yellow;
+}
+
+#about .container-fluid {
+  width: 80%;
+  text-align: center;
+  color: white;
+}
+
+#about p {
+  font-size: 1.4rem;
+}
+
+/* galleria di immagini */
+#gallery .container-fluid{
+  padding: 50px 0px;
+  width: 70%;
+}
+
+#gallery h3 {
+  font-family: 'Sansita', sans-serif !important;
+}
+
+#gallery .column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+#gallery .column img {
+  width: 100%;
+  margin-top: 12px; 
+  border-radius: 7px;
+}
+
+.zoom img { /* al passaggio del mouse l'animazione dell'immagine è più fluida */
+  transition:transform .2s;
+}
+
+#gallery .column img:hover { /* l'immagine diventa un po' più grande */
+  transform: scale(1.1); 
+}
+
+@media screen and (max-width: 768px){ /* modifica grafica per iPad */
+  .inizio .carousel img {
+    height: 400px;
+  }
+
+  #chisiamo .container-fluid {
+    padding: 25px;
+    width: 90%;
+  }
+
+  #menu img {
+    width: 364px;
+    padding: 5px 0px;
+  }
+  .shot-item .single-content a {
+    font-size: 40px;
+  }
+
+  #info{
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  #info .container-fluid {
+    width: 95%;
+  }
+  /*modifiche pagina chi siamo*/ 
+  #about {
+    background-attachment: fixed;
+    padding: 80px 0px 45px 0px;
+  }
+
+  .titolo h3:before {
+    right: 20px;
+  }
+
+  .titolo h3:after {
+    left: 20px;
+  }
+
+  /*modifiche pagine del menù*/
+  #piadina, #crescione, #rotolino, #dolce {
+    padding-top: 250px;
+  }
+
+  #list .container-fluid {
+    width: 60%;
+  }
+
+  #menu-pcrd .container-fluid{
+    width: 100%;
+  }
+
+  #menu-pcrd {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  #pdf {
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 545px){ /* modifica grafica per telefoni cellulare */
+  .navbar-brand img {
+    height: 35px;
+    width: 40px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-toggler i {
+    color:#fff; 
+    font-size:23px;
+  }
+
+  .inizio .carousel img {
+    height: 270px;
+  }
+
+  .carousel h1 {
+    font-size: 42px;
+  }
+
+  .carousel h3 {
+    font-size: 22px;
+  }
+
+  #chisiamo .container-fluid {
+    padding: 25px;
+    width: 90%;
+  }
+
+  #menu .container-fluid{
+    width: 95%;
+  }
+
+  .shot-item .single-content a {
+    font-size: 40px;
+    padding: 40px;
+  }
+
+  #info .container-fluid {
+    width: 90%;
+  }
+
+  #info h3 {
+    padding-top: 10px;
+  }
+
+  .text-block {
+  margin: 10px 20px;
+  }
+
+  .icon { /* grafica icone */
+    font-size: 30px;
+    margin: 20px auto;
+    padding: 2px; /* centramento contorno icone */
+    height: 55px; 
+    width: 55px;
+    border: 2px solid black; /* contorno icone */
+    border-radius: 50%; /* forma circolare contorno icone */
+  }
+
+  .griglia {
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .griglia p {
+    font-size: 1rem;
+  }
+
+  .griglia .col-xs {
+    width: 50%;
+    padding: 0px;
+  }
+
+  .griglia .ultima-col {
+    width: 100%;
+  }
+
+  .btn-outline-success{
+  font-size: 20px;
+  }
+
+  #contact {
+  padding: 50px 0px;
+  }
+
+  #contact h2 {
+    font-size: 40px;
+  }
+
+  #contact p {
+    margin-bottom: 10px !important;
+    font-size: 18px;
+  }
+
+  #contact .contact-info{
+  padding: 0px;
+  }
+
+  #contact iframe {
+    margin-top: 10px;
+    height: 270px;
+  }
+
+  #contact p.time {
+    margin: 0px !important; 
+    padding-left: 25px;
+  }
+
+  #contact p.time-1 {
+    margin: 0px !important; 
+  }
+
+  #footer p {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  #footer a i {
+    font-size: 22px;
+    margin: 0px 3px 3px 3px;
+  }
+
+/*modifica pagina chi siamo*/
+  #about h1 {
+    font-size: 50px;
+  }
+
+  #about p {
+    font-size: 20px;
+    margin-bottom: 5px !important;
+  }
+  #about .container-fluid {
+    width: 90%;
+  }
+
+  #about {
+    background-attachment: fixed;
+    padding: 80px 0px 45px 0px;
+  }
+  #gallery .container-fluid{
+    width: 85%;
+    padding: 30px 0px 25px 0px;
+  }
+
+  #gallery .column {
+    padding: 5px;
+  }
+
+  .titolo h3 {
+    font-size: 30px;
+  }
+
+  .titolo h3:before {
+    right: 20px;
+  }
+
+  .titolo h3:after {
+    left: 20px;
+  }
+
+  /*modifiche pagine del menù*/
+  #piadina, #crescione, #rotolino, #dolce {
+    padding-top: 150px;
+  }
+
+  #piadina h1 {
+    font-size: 60px;
+  }
+  #crescione h1 {
+    font-size: 60px;
+  }
+  #rotolino h1 {
+    font-size: 60px;
+  }
+  #dolce h1 {
+    font-size: 60px;
+  }
+  
+  #list .container-fluid {
+    width: 80%;
+  }
+
+  #menu-pcrd .container-fluid{
+    width: 95%;
+  }
+
+  #menu-pcrd {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  #pdf {
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+  }
+
+  #pdf h4 {
+    font-size: 25px;
+  }
+}
+
