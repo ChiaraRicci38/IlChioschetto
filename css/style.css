@@ -898,11 +898,11 @@ p.time-1 {
   }
 
   .titolo h3:before {
-    right: 8px;
+    right: 10px;
   }
 
   .titolo h3:after {
-    left: 8px;
+    left: 10px;
   }
 
   /*modifiche pagine del menù*/
