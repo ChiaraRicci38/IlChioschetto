@@ -636,6 +636,10 @@ p.time-1 {
   transform: scale(1.1); 
 }
 
+#gallery-2 {
+  display: none;
+}
+
 @media screen and (max-width: 768px){ /* modifica grafica per iPad */
   .inizio .carousel img {
     height: 400px;
@@ -770,7 +774,7 @@ p.time-1 {
   }
 
   .griglia p {
-    font-size: 1rem;
+    font-size: 18px;
   }
 
   .griglia .col-xs {
@@ -844,13 +848,43 @@ p.time-1 {
     background-attachment: fixed;
     padding: 80px 0px 45px 0px;
   }
-  #gallery .container-fluid{
+  
+  #gallery {
+    display: none;
+  }
+
+  #gallery-2 {
+    display: inherit;
+  }
+
+  #gallery-2 .container-fluid{
+    padding: 50px 0px;
     width: 85%;
     padding: 30px 0px 25px 0px;
   }
 
-  #gallery .column {
+  #gallery-2 h3 {
+    font-family: 'Sansita', sans-serif !important;
+  }
+
+  #gallery-2 .column {
+    float: left;
+    width: 50%;
     padding: 5px;
+  }
+
+  #gallery-2 .column img {
+    width: 100%;
+    margin-top: 12px; 
+    border-radius: 7px;
+  }
+
+  .zoom img { /* al passaggio del mouse l'animazione dell'immagine è più fluida */
+    transition:transform .2s;
+  }
+
+  #gallery .column img:hover { /* l'immagine diventa un po' più grande */
+    transform: scale(1.1); 
   }
 
   .titolo h3 {
@@ -858,11 +892,11 @@ p.time-1 {
   }
 
   .titolo h3:before {
-    right: 20px;
+    right: 10px;
   }
 
   .titolo h3:after {
-    left: 20px;
+    left: 10px;
   }
 
   /*modifiche pagine del menù*/
