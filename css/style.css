@@ -438,6 +438,12 @@ p.time-1 {
   opacity: 1;
 }
 
+#list .attenzione {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /* grafico dei tre riquadri delle alternative */
 #menu-pcrd {
   padding-top: 70px;
