@@ -738,7 +738,7 @@ p.time-1 {
   }
   
   #menu img {
-    padding: 10px 0px;
+    padding: 10px 0px !important;
   }
   
   #menu .portfolio-item {
