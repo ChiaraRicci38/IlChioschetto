@@ -465,10 +465,10 @@ p.time-1 {
 
 #pdf i {
   text-align: center;
-  margin: 15px;
+  margin: 6px;
   color: black;
   font-size: 30px;
-  padding: 7px; /* centramento contorno icone */
+  padding: 6px; /* centramento contorno icone */
   height: 50px; 
   width: 50px;
   border: 3px solid black; /* contorno icone */
