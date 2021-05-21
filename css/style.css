@@ -371,6 +371,10 @@ p.time-1 {
   margin-bottom: 5px;
 }
 
+.document {
+  font-size:14px;
+}
+
 #footer a i {
   font-size: 27px;
   margin: 0px 5px 5px 5px;
@@ -647,6 +651,64 @@ p.time-1 {
   display: none;
 }
 
+/* DOCUMENTAZIONE */
+#doc-img {
+  background-image: url(../img/doc.jpg);
+  background-size: cover;
+  background-position: top;
+  padding-top: 350px;
+  padding-bottom: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#doc {
+  margin: 40px 0px;
+}
+
+#doc .container-fluid {
+  width: 80%;
+  margin: 20px 0px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+
+#doc h3 {
+  font-family: 'Sansita', sans-serif !important;
+}
+
+#doc h5 {
+  text-decoration: underline;
+}
+
+.schema {
+  margin: 20px 0px;
+  width: 500px;
+  height:300px;
+}
+
+#doc col{
+  width: 33%;
+}
+
+#doc .zoom img {
+  margin: 35px 0px;
+  width: 100%;
+}
+
+#doc .zoom img:hover {
+  transform: scale(1.1); 
+}
+
+#doc a {
+  color: blue !important;
+}
+
+.nomargin {
+  margin: 0px;
+}
+
 @media screen and (max-width: 768px){ /* modifica grafica per iPad */
   .inizio .carousel img {
     height: 400px;
@@ -708,6 +770,13 @@ p.time-1 {
   #pdf {
     padding-bottom: 25px;
     margin-bottom: 0px;
+  }
+  
+  /* DOCUMENTAZIONE */
+   #doc-img {
+    background-image: url(../img/doc1.jpg);
+    padding-top: 270px;
+    padding-bottom: 150px;
   }
 }
 
@@ -948,6 +1017,30 @@ p.time-1 {
 
   #pdf h4 {
     font-size: 25px;
+  }
+  
+  /* DOCUMENTAZIONE */
+  #doc .container-fluid {
+    width: 90%;
+  }
+  
+  .schema {
+    width: 300px;
+    height: 200px;
+  }
+  
+  #doc-img h1 {
+    font-size: 40px !important;
+  }
+  
+  #doc-img {
+    background-image: url(../img/doc1.jpg);
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+  
+  #doc .zoom img {
+    margin: 10px 0px;
   }
 }
 
